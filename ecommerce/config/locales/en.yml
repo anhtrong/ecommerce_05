@@ -1,3 +1,19 @@
 en:
   hello: "Hello world"
   title: "Ecommerce"
+  task: Task
+  category: Category
+  product: Product
+  request: Request
+  order: Order
+  user: User
+  information: Information
+  contact: Contact
+  about: About
+  my_account: My Account
+  login: Login
+  share: Share
+  facebook: Facebook
+  twitter: Twitter
+  home: Home
+  signup: Sign Up
