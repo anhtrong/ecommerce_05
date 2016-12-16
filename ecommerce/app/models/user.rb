@@ -5,4 +5,5 @@ class User < ApplicationRecord
   has_many :requests, dependent: :destroy
   has_many :orders, dependent: :destroy
   has_many :comments, dependent: :destroy
+  enum :role [:admin, :user]
 end

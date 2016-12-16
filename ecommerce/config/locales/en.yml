@@ -29,3 +29,5 @@ en:
   current_password: we need your current password to confirm your changes
   unhappy: Unhappy?
   signup_with: Sign up with
+  error: "Error!"
+  user.not_found: "Not found"
