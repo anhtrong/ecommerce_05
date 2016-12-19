@@ -17,3 +17,15 @@ en:
   twitter: Twitter
   home: Home
   signup: Sign Up
+  sure: Are you sure?
+  edit: Edit
+  cancel_account: Cancel my account
+  back: Back
+  update: Update
+  register: Register
+  leave_blank: leave blank if you don't want to change it
+  current_waiting: Currently waiting confirmation for
+  characters_minimum: characters minimum
+  current_password: we need your current password to confirm your changes
+  unhappy: Unhappy?
+  signup_with: Sign up with
