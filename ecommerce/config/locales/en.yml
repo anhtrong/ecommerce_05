@@ -31,3 +31,5 @@ en:
   signup_with: Sign up with
   error: "Error!"
   user.not_found: "Not found"
+  picture: "should be less than 5MB"
+  select_category: "Select Category"
