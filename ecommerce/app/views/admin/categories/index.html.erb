@@ -1,0 +1,18 @@
+<div class="content-page-admin">
+  <h2 class="text-center"><%= t ".title" %></h2>
+    <div class="flash-massage"></div>
+      <%= render "search" %>
+    <div class="mg-bt-10 pull-right">
+      <%= link_to  t(".new"), new_admin_category_path,
+        class: "btn btn btn-primary" %>
+    </div>
+    <table class="table table-bordered" id="table-category">
+      <tr>
+        <th><%= t "number_order" %></th>
+        <th><%= t "name" %></th>
+        <th><%= t "created" %></th>
+      </tr>
+      <%= render partial: "category", locals: {category: @categories} %>
+    </table>
+  <%= will_paginate @categories %>
+</div>
