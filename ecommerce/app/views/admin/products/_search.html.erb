@@ -1,0 +1,12 @@
+<div class="row mg-bt-10">
+  <div class="col-md-6">
+    <%= search_form_for [:admin, @search] do |f| %>
+      <div class="input-group col-md-8">
+        <%= f.search_field :name, class: "form-control" %>
+        <span class="input-group-btn">
+          <%= f.submit class: "btn btn-danger" %>
+        </span>
+      </div>
+    <% end %>
+  </div>
+</div>
