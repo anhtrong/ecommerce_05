@@ -33,6 +33,14 @@ en:
   user.not_found: "Not found"
   picture: "should be less than 5MB"
   select_category: "Select Category"
-  success_create: Create Success
-  save: Save
-  new: New
+  success_create: "Create Success!"
+  save: "Save"
+  new: "New"
+  error_create: "Create Error!"
+  success_delete: "Success Delete"
+  error_delete: "Error Delete"
+  post: "Post"
+  about: "About"
+  ago: "ago"
+  write_comment: "Write Comments"
+  time_comment: "time_ago_in_words(created_at)"

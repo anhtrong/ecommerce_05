@@ -1,0 +1,24 @@
+<div class="comment">
+  <div class="row">
+    <div class="col-md-3 image-user">
+      <%= image_tag comment.user.avatar %>
+    </div>
+    <div class="col-md-9 comment-content">
+      <div class="row">
+        <span class="content truncate">
+          <%= comment.content %>
+        </span>
+      </div>
+      <div class="row">
+        <span class="timestamp"><%= t "posted" %>
+          <span class="user"><%= link_to comment.user_name, "#" %></span>
+          <%= "#{t("about")} #{t("time_ago_in_words(created_at)")} #{t("ago")}" %>
+          <% if current_user.is_user? comment.user %>
+            <a class="btn-delete-comment" data-value="<%= comment.id %>">
+            <i class="text-danger glyphicon glyphicon-trash"></i></a>
+          <% end %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
