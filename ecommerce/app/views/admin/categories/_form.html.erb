@@ -1,0 +1,4 @@
+<%= simple_form_for [:admin, @category] do |f| %>
+  <%= f.input :name, class: "form-control" %>
+  <%= f.button :submit, t (".save"), class: "btn btn-submit" %>
+<% end %>

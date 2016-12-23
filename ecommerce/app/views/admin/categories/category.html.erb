@@ -1,0 +1,10 @@
+<% @categories.each_with_index do |category, index| %>
+  <tr>
+    <td>
+      <%= params[:page] ||= "1" %>
+      <%= index_continue params[:page], index, Settings.per_page %>
+    </td>
+    <td><%= category.name %></td>
+    <td><%= category.created_at, format: :short_date %></td>
+  </tr>
+<% end %>
