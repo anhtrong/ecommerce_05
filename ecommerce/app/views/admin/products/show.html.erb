@@ -1,0 +1,57 @@
+<div class="container detail-product">
+   <div class="row">
+     <div class="col-md-5 ">
+       <span class="image-product"><%= image_tag @product.image.url %></span>
+        <div id="hintDiv"></div>
+        <%= rating_for @product, "rate", enable_half: true, target: "#hintDiv",
+          targetType: "hint", targetText: t("products.rate") %>
+        <%= social_share_button_tag @product.name %>
+        <div class="status-upload" id="comments">
+          <p><%= t "comment.comment" %></p>
+          <%= render "comments/form_comment", object: @product %>
+        <div class="comments">
+          <%= render @product.comments %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-hover">
+        <tr>
+          <th><%= t ".product" %></th>
+          <th><%= t ".quantity" %></th>
+          <th class="text-center"><%= t ".price" %></th>
+        </tr>
+        <tr>
+          <td class="col-sm-8 col-md-6">
+            <div class="media">
+              <div class="media-body">
+                <h4 class="media-heading"><%= @product.name %></h4>
+                <span class="text-success">
+                  <strong><%= t "products.status" %></strong></span>
+                <span class="text-success"><strong></strong></span>
+              </div>
+            </div>
+          </td>
+          <td class="col-sm-3 col-md-3" style="text-align: center">
+            <input type="email" class="form-control"
+              id="exampleInputEmail1" value="">
+          </td>
+          <td class="col-sm-3 col-md-3 text-center">
+            <strong>$<%= @product.price %></strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-success">
+              <span class="glyphicon glyphicon-shopping-cart"></span>
+              <%= t "cart.btn_cart" %>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <span class="text-primary">
+        <strong><%= t "product.description" %></strong></span>
+      <%= @product.description %>
+    </div>
+  </div>
+</div>
