@@ -1,0 +1,11 @@
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <%= render "list" %>
+    </div>
+    <% if @cart.present? %>
+      <%= link_to t(".order"), new_order_path,
+        class: "pull-left btn btn-primary col-md-offset-1" %>
+    <% end %>
+  </div>
+</div>
