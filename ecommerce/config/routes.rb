@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "static_pages#index"
-  devise_for :users
+  devise_for :users, controllers: {omniauth_callbacks: "users/omniauth_callbacks"}
   resources :product_requests, only: [:new, :show, :create]
   namespace :admin do
     root "users#index"
